@@ -15,13 +15,16 @@ the model are read from `info.txt` at build time and compiled into a **single
 ## Quick start
 
 ```bat
-:: 0. fresh clone only: create your private config from the template
+git clone https://github.com/phuthai/esp32-deepseek-chatbot.git
+cd esp32-deepseek-chatbot
+
+:: 1. create your private config from the template
 copy info.txt.example info.txt
 
-:: 1. edit info.txt (Wi-Fi, API key, system role, model)
+:: 2. edit info.txt (Wi-Fi, API key, system role, model)
 notepad info.txt
 
-:: 2. build -> dist\DeepSeekChat_ESP32S3_4MB.bin
+:: 3. build -> dist\DeepSeekChat_ESP32S3_4MB.bin
 build.bat
 ```
 

@@ -1,0 +1,27 @@
+# --- secrets and machine-local config (never commit) -----------------------
+info.txt
+chatbot/generated_info.h
+arduino-cli.yaml
+arduino-cli-short.yaml
+
+# --- build outputs ---------------------------------------------------------
+build/
+build-temp/
+dist/
+*.bin
+*.elf
+*.map
+*.sha256
+
+# --- toolchain downloaded by tools/setup_toolchain.py (~8 GB) --------------
+arduino-data/
+tools/arduino-cli.exe
+tools/arduino-cli.zip
+tools/LICENSE.txt
+
+# --- OS / editors ----------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

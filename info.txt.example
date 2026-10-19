@@ -1,0 +1,35 @@
+﻿# ==========================================================================
+#  TEMPLATE - copy this file to  info.txt  and fill in your values.
+#
+#      copy info.txt.example info.txt
+#
+#  info.txt is git-ignored, so your API key never reaches GitHub.
+# ==========================================================================
+# --- Wi-Fi (2.4 GHz only - ESP32-S3 cannot see 5 GHz networks) ------------
+WIFI_SSID=YourWiFiName
+WIFI_PASS=YourWiFiPassword
+
+# --- DeepSeek API key ------------------------------------------------------
+# Create one at https://platform.deepseek.com/api_keys
+API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# --- System role / persona -------------------------------------------------
+# One line. Use \n for a line break. UTF-8 (Chinese is fine).
+SYSTEM_ROLE=You are a helpful assistant. Answer in the same language as the user. Keep answers short and clear.
+
+# --- Model -----------------------------------------------------------------
+# deepseek-chat     = fast general chat
+# deepseek-reasoner = slower, shows its thinking
+MODEL=deepseek-chat
+
+# --- Generation settings ---------------------------------------------------
+MAX_TOKENS=512
+TEMPERATURE=0.7
+
+# --- Conversation memory ---------------------------------------------------
+# Characters of chat history kept between turns (0 = no memory).
+HISTORY_CHARS=8000
+
+# --- Stream the answer as it is generated: 1 = on, 0 = off ----------------
+STREAM=1
+
